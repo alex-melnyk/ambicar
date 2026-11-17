@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ambicar Support</title>
+  <meta name="description" content="Help with the Ambicar app: connecting to the controller, colours, events, Apple Watch and CarPlay.">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <a class="brand" href="/"><img src="../assets/icon.png" alt=""><span>AMBICAR</span></a>
+      <nav><a href="/support/" aria-current="page">Support</a><a href="/privacy/">Privacy</a></nav>
+    </header>
+
+    <main class="prose">
+      <h1>Support</h1>
+      <p>Answers to common questions. If yours isn't here, <a href="https://github.com/alex-melnyk/ambicar/issues/new">open an issue</a> and you'll get a reply there.</p>
+
+      <h2>Connecting</h2>
+      <details><summary>The app can't find my car</summary>
+        <p>The controller sleeps with the car. Unlock the car or switch the ignition on, keep the phone within a few metres, and make sure Bluetooth is on and Ambicar is allowed to use it (Settings → Privacy &amp; Security → Bluetooth).</p></details>
+      <details><summary>It says the controller rejected the app</summary>
+        <p>Each controller is paired with its own app key. Use the app build that came with your controller.</p></details>
+      <details><summary>How many phones can connect?</summary>
+        <p>Up to three devices at once (for example, two phones and an Apple Watch). Changes made on one show on the others.</p></details>
+
+      <h2>Light</h2>
+      <details><summary>How do I change the colour?</summary>
+        <p>Colour tab: drag the ring or tap a preset. The bar at the bottom of the Car tab sets brightness; tap its colour to jump to the Colour tab.</p></details>
+      <details><summary>Can each event have its own colour?</summary>
+        <p>Yes. Events tab → tap an event → Colour. Ignition on and off use the driving colour; Goodbye (lock) only fades out what is lit.</p></details>
+      <details><summary>Preview doesn't light the doors</summary>
+        <p>Previews need the car awake and the door boards online (Settings → Door boards). After a preview the doors go back to the car's real state.</p></details>
+
+      <h2>Apple Watch and CarPlay</h2>
+      <details><summary>Watch</summary>
+        <p>The watch app connects to the controller on its own: turn the Digital Crown for brightness, swipe for colour presets.</p></details>
+      <details><summary>CarPlay</summary>
+        <p>One screen with colour presets and brightness buttons, available once CarPlay support is approved by Apple.</p></details>
+
+      <h2>Demo</h2>
+      <details><summary>Can I try the app without a controller?</summary>
+        <p>Yes. On the first screen tap "No controller yet? Try the demo", or Settings → Demo car → Start demo. Settings → Exit demo goes back.</p></details>
+
+      <h2>Contact</h2>
+      <p>Report a problem or ask a question on <a href="https://github.com/alex-melnyk/ambicar/issues">GitHub Issues</a>. Settings → Event log → Share attaches a log that helps find the cause; it contains only what the app and the car did.</p>
+    </main>
+  </div>
+
+  <footer><div class="wrap"><a href="/">Home</a><a href="/privacy/">Privacy</a>© 2026 Oleksandr Melnyk</div></footer>
+</body>
+</html>
