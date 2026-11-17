@@ -64,8 +64,20 @@ h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.05; m
 }
 .badge.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); margin-left: 8px; }
 
-.shots { display: flex; gap: 16px; justify-content: center; margin: 8px 0 64px; flex-wrap: wrap; }
-.shots img { width: 220px; max-width: 44vw; border-radius: 28px; border: 1px solid var(--line); }
+.shots {
+  display: flex; gap: 16px; margin: 8px -16px 56px; padding: 0 16px 8px;
+  overflow-x: auto; scroll-snap-type: x mandatory; justify-content: safe center;
+  -webkit-overflow-scrolling: touch; scrollbar-width: none;
+}
+.shots::-webkit-scrollbar { display: none; }
+.shots img {
+  flex: 0 0 auto; width: 200px; height: auto; border-radius: 26px;
+  border: 1px solid var(--line); scroll-snap-align: center;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+.watch { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.watch img { width: 150px; height: auto; border-radius: 34px; border: 1px solid var(--line); }
+.watch p { flex: 1 1 220px; margin: 0; color: var(--soft); }
 
 section { padding: 40px 0; border-top: 1px solid var(--line); }
 section h2 { font-size: 40px; margin-bottom: 20px; }
